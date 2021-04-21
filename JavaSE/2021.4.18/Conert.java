@@ -1,3 +1,6 @@
+/**
+ * 和视频中有歧义
+ */
 public class Conert{
 	public static void main(String[] args){
 		char c1='\n';
