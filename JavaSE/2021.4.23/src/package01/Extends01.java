@@ -18,7 +18,8 @@ public class Extends01 {
         pupil.showInfor();
         graduage.showInfor();
 
-        package02.print p = new print();
+        package02.print p = new package02.print();
+        // 这里创建的是package02的包
         p.print01();
         // 即使package01中没有print类，也必须附带print的包的位置
         // 如果设置自动添加包，print自动指向package02
