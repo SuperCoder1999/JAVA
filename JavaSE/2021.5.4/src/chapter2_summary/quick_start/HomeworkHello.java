@@ -1,4 +1,4 @@
-package quick_start;
+package chapter2_summary.quick_start;
 
 public class HomeworkHello {
     public static void main(String[] args) {
