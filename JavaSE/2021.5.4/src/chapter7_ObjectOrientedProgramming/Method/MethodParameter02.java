@@ -1,4 +1,4 @@
-package chapter7_Object;
+package chapter7_ObjectOrientedProgramming.Method;
 
 public class MethodParameter02 {
     public static void main(String[] args) {

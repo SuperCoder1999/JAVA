@@ -1,4 +1,4 @@
-package chapter7_Object;
+package chapter7_ObjectOrientedProgramming.Method;
 
 /**
  *
