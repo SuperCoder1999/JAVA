@@ -1,4 +1,4 @@
-package chapter7_ObjectOrientedProgramming.Constructor;
+package chapter7objectorientedprogrammingprimary.Constructor;
 
 /*
     在前面定义的Person类中添加两个构造器:

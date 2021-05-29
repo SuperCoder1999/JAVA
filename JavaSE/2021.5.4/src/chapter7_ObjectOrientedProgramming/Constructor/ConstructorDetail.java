@@ -1,4 +1,4 @@
-package chapter7_ObjectOrientedProgramming.Constructor;
+package chapter7objectorientedprogrammingprimary.Constructor;
 
 public class ConstructorDetail {
     public static void main(String[] args) {

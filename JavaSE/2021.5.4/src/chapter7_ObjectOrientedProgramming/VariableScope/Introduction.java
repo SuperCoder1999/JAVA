@@ -1,4 +1,4 @@
-package chapter7_ObjectOrientedProgramming.VariableScope;
+package chapter7objectorientedprogrammingprimary.VariableScope;
 
 /*
 1.变量主要是 属性（也叫成员变量，它是全局变量） 和 局部变量

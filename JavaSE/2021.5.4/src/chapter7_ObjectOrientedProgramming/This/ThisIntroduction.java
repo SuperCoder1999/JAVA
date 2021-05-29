@@ -1,4 +1,4 @@
-package chapter7_ObjectOrientedProgramming.This;
+package chapter7objectorientedprogrammingprimary.This;
 
 public class ThisIntroduction {
     public static void main(String[] args) {

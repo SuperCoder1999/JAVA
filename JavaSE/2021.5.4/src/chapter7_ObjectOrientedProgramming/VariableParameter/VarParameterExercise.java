@@ -1,4 +1,4 @@
-package chapter7_ObjectOrientedProgramming.VariableParameter;
+package chapter7objectorientedprogrammingprimary.VariableParameter;
 
 /*
 	有三个方法，分别实现返回姓名和两门课成绩(总分)，

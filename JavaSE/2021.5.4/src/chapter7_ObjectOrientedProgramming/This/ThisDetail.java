@@ -1,15 +1,28 @@
-package chapter7_ObjectOrientedProgramming.This;
+package chapter7objectorientedprogrammingprimary.This;
 
 public class ThisDetail {
     public static void main(String[] args) {
         // this的细节：
         // 1.访问成员方法的语法：this.方法名(参数列表);
-        // 2.访问构造器语法：this(参数列表);注意只能在构造器中使用，必须放置在第一条语句
-
+        // 2.访问构造器语法：this(参数列表)[没有方法名,因为构造器的方法名就是类名];注意只能在构造器中使用，必须放置在第一条语句
+        // 3.this不能在类定义的外部使用，只能在类定义的代码块中(一般使用的范围也就是方法中)使用
+        // 4.this用于区分当前类的属性和局部变量
 
         // 1.访问成员方法的语法：this.方法名(参数列表);
         D1 aD1 = new D1();
         aD1.f3();
+
+        //2.访问构造器语法：
+        D2 aD2 = new D2();
+
+        // 3.this不能在类定义的外部使用，只能在类定义的代码块中
+        D3 aD3 = new D3();
+        //this.age;//this没有代替的对象
+        aD3.print();
+
+        // 4.this用于区分当前类的属性和局部变量
+        D4 aD4 = new D4();
+        aD4.print();
     }
 }
 
@@ -36,4 +49,41 @@ class D1 {
 
 class D2 {
 
+    String name;
+    int age;
+
+    public D2(String name, int age) {
+        this.name = name;
+        this.age = age;
+        System.out.println("public D2(String name, int age)构造器被调用");
+    }
+
+    public D2() {
+        this("Jack",12);// 没有方法名，且必须在第一句（放在第一句和继承有关）
+        System.out.println("this(参数列表)调用其他构造器");
+    }
+
+}
+
+class D3 {
+
+    String name;
+    int age;
+
+    // 3.this不能在类定义的外部使用，只能在类定义的代码块中使用
+    public void print() {
+        System.out.println("this只能在类定义的代码块中使用(一般使用的范围也就是方法中)" + this.age);
+    }
+
+}
+
+class D4 {
+
+    String name = "Jack";
+
+    public void print() {
+        String name = "tom";
+        System.out.println("name: " + name);
+        System.out.println("this.name: " + this.name);
+    }
 }

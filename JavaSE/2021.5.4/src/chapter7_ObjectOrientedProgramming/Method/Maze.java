@@ -1,4 +1,4 @@
-package chapter7_ObjectOrientedProgramming.Method;
+package chapter7objectorientedprogrammingprimary.Method;
 
 public class Maze {
     public static void main(String[] args) {

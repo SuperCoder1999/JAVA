@@ -1,4 +1,4 @@
-package chapter7_ObjectOrientedProgramming.Method;
+package chapter7objectorientedprogrammingprimary.Method;
 /*
  八皇后 递归问题，暂时不会
  */

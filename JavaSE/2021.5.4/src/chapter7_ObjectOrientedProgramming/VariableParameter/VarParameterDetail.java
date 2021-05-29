@@ -1,4 +1,4 @@
-package chapter7_ObjectOrientedProgramming.VariableParameter;
+package chapter7objectorientedprogrammingprimary.VariableParameter;
 
 public class VarParameterDetail {
     public static void main(String[] args) {

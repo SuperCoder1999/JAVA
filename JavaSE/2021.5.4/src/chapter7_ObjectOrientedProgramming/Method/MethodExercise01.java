@@ -1,4 +1,4 @@
-package chapter7_ObjectOrientedProgramming.Method;
+package chapter7objectorientedprogrammingprimary.Method;
 
 /**
  * 1)	编写类 AA ，第一个方法：判断一个数是奇数 odd 还是偶数, 返回 boolean
