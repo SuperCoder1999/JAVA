@@ -23,8 +23,8 @@ public class IdeaUse {
         5.快速导入类：File--settings--Editor--General--Auto import 或者快捷键 Alt + Enter
         6.快速格式化（reform）：Ctrl + alt + L
         7.生成构造器：alt + insert
-        8.查看类的层级关系 Ctrl + H 右键 Diagrams
-        9.光标放在一个方法上，Ctrl + b ，可以定位到高方法的定义区域（继承中很好用）
+        8.查看类的层级关系（Diagrams） ： 光标放在类名上，Ctrl + H ，看类的继承关系
+        9.光标放在一个方法上，Ctrl + b ，可以定位到该方法(类)的定义区域（继承中很好用）
         10.自动分配变量名：new Scanner(System.in).var回车
 
         二：模板（File--Settings--Editor--Live templates,选择范围java）
