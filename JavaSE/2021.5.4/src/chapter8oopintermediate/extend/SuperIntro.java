@@ -1,6 +1,6 @@
 package chapter8oopintermediate.extend;
 
-public class Super {
+public class SuperIntro {
     public static void main(String[] args) {
         /*
             1. 定义：super代表父类的引用，用于访问父类的属性、方法、构造器
@@ -9,6 +9,9 @@ public class Super {
                 2）访问父类的方法，但不能访问父类的private方法   super.方法名(参数列表)
                     按照封装的思想：在父类中的一个public方法中调用m3再调用这个public方法
                 3）访问父类的构造器：super(参数列表)，只能放在构造器的第一句
+
+            3. super带来的便利
+                1）调用父类的构造器的好处：分工明确，父类属性由父类初始化，子类的属性由子类初始化
          */
         // 1）访问父类的属性，但是不能访问父类的private属性  super.属性名
         S s = new S();
