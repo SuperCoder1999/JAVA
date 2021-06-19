@@ -24,8 +24,9 @@ public class IdeaUse {
         6.快速格式化（reform）：Ctrl + alt + L
         7.生成构造器：alt + insert
         8.查看类的层级关系（Diagrams） ： 光标放在类名上，Ctrl + H ，看类的继承关系
-        9.光标放在一个方法上，Ctrl + b ，可以定位到该方法(类)的定义区域（继承中很好用）
+        9.光标放在一个方法上，Ctrl + b ，可以定位到该方法(类)的定义区域（继承中很好用）(也可以用来看JDK源码）
         10.自动分配变量名：new Scanner(System.in).var回车
+        11 alt + enter:自动添加类的包
 
         二：模板（File--Settings--Editor--Live templates,选择范围java）
         1.main回车

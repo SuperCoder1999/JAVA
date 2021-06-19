@@ -5,7 +5,7 @@ package chapter8oopintermediate.Override;
         方法覆盖（重写）就是子类中一个方法和父类的某个方法的方法名、返回类型、参数列表
             一样，此时就说子类的这个方法覆盖了父类的方法
     二：
-        其实属性的重写，就是重新定义一个同名的属性。调用时，就近原则。所以重写可以扩大为成员的重写
+        其实属性的重写，就是重新定义一个同名的属性。调用时，首先找编译类型内的，在找父类。所以重写可以扩大为成员的重写.
  */
 public class Introduction {
     public static void main(String[] args) {
@@ -14,6 +14,10 @@ public class Introduction {
 
         System.out.println(new Student().n1);
         new Student().m2();
+
+
+        Person p = new Student();
+        System.out.println(p.n1);
     }
 }
 
