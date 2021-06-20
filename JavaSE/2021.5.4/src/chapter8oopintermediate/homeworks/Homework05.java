@@ -157,7 +157,7 @@ class Scientist extends Person05 {
 }
 
 /*public class Homework05 {
-    public static void main(String[] args) {
+    public staticparameter void main(String[] args) {
         System.out.println(new Worker05("Jack", 50000).yearSal());
         System.out.println(new Peasant05("Tom", 40000).yearSal());
         System.out.println(new Teacher05("Smith", 30000, 200, 10).yearSal());

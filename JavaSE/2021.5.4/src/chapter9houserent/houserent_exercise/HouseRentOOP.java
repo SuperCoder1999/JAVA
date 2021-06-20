@@ -65,6 +65,6 @@ public class HouseRentOOP {
         price = scanner.nextDouble();
         System.out.print("状态：");
         status = scanner.next();
-        house[count][0] =
+        //house[count][0] =
     }
 }

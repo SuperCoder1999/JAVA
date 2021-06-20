@@ -35,7 +35,7 @@ class TestPerson {
 
 /*
 public class ThisExercise {
-    public static void main(String[] args) {
+    public staticparameter void main(String[] args) {
 
         TestPerson aTestPerson = new TestPerson("Jack", 19);
         System.out.println(aTestPerson.compareTo("Jack", 19));

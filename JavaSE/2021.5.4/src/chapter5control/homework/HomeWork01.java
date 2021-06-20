@@ -5,7 +5,7 @@ package chapter5control.homework;
     import java.util.Scanner;
 
     public class HomeWork01 {
-        public static void main(String[] args) {
+        public staticparameter void main(String[] args) {
             int money;
             int count = 0;
             Scanner myScanner = new Scanner(System.in);
