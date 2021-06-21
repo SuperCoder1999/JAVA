@@ -1,5 +1,19 @@
 package chapter10oopsenior.final_;
 
+/*
+    final使用注意事项和细节
+    1. final修饰的属性又叫常量，一般用XX_XX_XX来命名
+    2. final修饰的属性在定义时，必须赋初值，并且不论是本类的方法中还是创建对象后都不能修改
+        赋初值的位置如下：
+        1）定义的同时赋值：public final double TAX_RATE = 0.08;
+        2）在构造器中
+        3）在代码块中(普通代码块，因为静态代码块不能调用静态属性）
+    3.如果final修饰的属性是静态的，则初始化的位置只能时
+        1）定义时
+        2）静态代码块中 不能在构造器和普通代码块中赋值（构造器可能没有被调用）
+    4）final类不能继承，但是可以实例化对象
+    5）如果类不是final类但是含有final方法，则该方法虽然不能重写，但是该类可以被继承
+ */
 public class FinalDetail01 {
     public static void main(String[] args) {
         CC cc = new CC();
@@ -18,12 +32,17 @@ class AA {
     public final double TAX_RATE2;
     public final double TAX_RATE3;
 
+
     public AA() {//构造器中赋值
         TAX_RATE2 = 1.1;
     }
 
     {//在代码块赋值
         TAX_RATE3 = 8.8;
+    }
+    //final修饰的属性在定义时，必须赋初值，并且不论是本类的方法中还是创建对象后都不能修改
+    public void f1() {
+        //TAX_RATE = 10;
     }
 }
 
