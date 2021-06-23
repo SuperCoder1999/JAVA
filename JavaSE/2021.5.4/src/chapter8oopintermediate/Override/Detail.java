@@ -9,6 +9,8 @@ public class Detail {
                 的子类
             3)子类需要重写的方法的访问权限不能低于父类 public > protected > 默认 > private
             4)private 修饰的方法，在子类中不能重写
+            5）只有静态方法可以重写静态方法
+}
          */
 
         //2）子类需要重写的方法的返回类型和父类方法返回类型一样或是父类返回类型
@@ -73,4 +75,16 @@ class BBB {
     protected void m2() {
         System.out.println("BBB类的protected void m2() 方法");
     }
+}
+
+class Father {
+    public static void h1() {
+        System.out.println("12");
+    }
+}
+
+class Son extends Father {
+    public static void h1() {
+        System.out.println("123");
+    }//只有静态方法可以重写静态方法
 }

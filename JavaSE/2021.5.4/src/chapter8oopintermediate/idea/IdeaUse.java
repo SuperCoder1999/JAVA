@@ -34,9 +34,17 @@ public class IdeaUse {
         2.sout回车
         3.fori回车
 
+
         三：修改形参中的提示信息("Jack", 180, 20000)
             File--Settings--Editor--Inlay Hints--Java--Show parameter hints for
 
+        四：起始模板
+        1. setting - edit - file and code... - include
+
+        五：关于jdk指令
+        javac Hello.java - 编译
+        java Hello - 运行
+        javap Hello.class
          */
 
     }

@@ -38,7 +38,7 @@ interface AInterface {
     public int n1 = 10;
 
     // 接口内的抽象方法（abstract可以省略的）
-    public void h1();
+    public void h1();// 抽象方法不能用static修饰
 
     // 在Jdk8.0后接口可以有静态方法、默认方法，也就是说接口中可以有方法的具体实现
     public static void f1() {
@@ -54,4 +54,22 @@ class AA implements AInterface {
     public void h1() {
         System.out.println("123");
     }
+//    public static void f1() {
+//        System.out.println("wode");
+//    }//静态方法可以重写静态方法，静态方法不能重写普通方法
+
+    public void f1() {
+        System.out.println("我的");
+    } // 不知为何这里普通方法也可以重写静态方法
+}
+
+class Father {
+    public static void h1() {
+        System.out.println("12");
+    }
+}
+class Son extends Father {
+    public static void h1() {
+        System.out.println("123");
+    }//只有静态方法可以重写静态方法
 }
