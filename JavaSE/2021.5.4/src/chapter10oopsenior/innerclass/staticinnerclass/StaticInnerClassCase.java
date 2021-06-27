@@ -22,7 +22,7 @@ public class StaticInnerClassCase {
         //因为静态内部类，是可以通过类名直接访问(前提是满足访问权限)
         //new Outer10().new Inner10();是错误的
         //outer10.new Inner10();也是错误的
-        // 不同于成员内部类。这里内部类是静态的。而static修饰类的情况也只有此时，
+        // 不同于成员内部类。这里内部类是静态的。注意static修饰类的情况也只有此时，
         //  所以创建对象时是很特殊的
         Outer10.Inner10 inner10 = new Outer10.Inner10();
         inner10.say();

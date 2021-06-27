@@ -23,7 +23,8 @@ public class Homework02 {
 
         Frock f5 = new Frock();
         System.out.println(f5.getSerialNumber());
-
+        // 从之前错误的经验来看。可以总结出：构造器和getNextNum两个有实现同一目的。
+        //所以构造器和getNextNum只能同时调用一个（所以这就是为什么getNextNum是静态方法）
     }
 }
 
