@@ -37,7 +37,7 @@ class C {
 class D extends C {
 //    @Override
 //    public void hi() {
-//        System.out.println("重写了C类的hi方法..");
+//        System_.out.println("重写了C类的hi方法..");
 //    }
 }
 

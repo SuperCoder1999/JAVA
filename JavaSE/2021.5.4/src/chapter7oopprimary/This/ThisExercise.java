@@ -38,8 +38,8 @@ public class ThisExercise {
     public staticparameter void main(String[] args) {
 
         TestPerson aTestPerson = new TestPerson("Jack", 19);
-        System.out.println(aTestPerson.compareTo("Jack", 19));
-        System.out.println(aTestPerson.compareTo("Mack", 19));
+        System_.out.println(aTestPerson.compareTo("Jack", 19));
+        System_.out.println(aTestPerson.compareTo("Mack", 19));
 
     }
 }

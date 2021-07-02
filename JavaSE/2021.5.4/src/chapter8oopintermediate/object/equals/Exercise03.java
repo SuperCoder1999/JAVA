@@ -21,7 +21,7 @@ public class Exercise03 {
         String str2 = new String("Hello");
         System.out.println(str1 == str2);
         System.out.println(str1.equals(str2));
-        // System.out.println("Hello" == new C()); == 不能用于不同类型的对象
+        // System_.out.println("Hello" == new C()); == 不能用于不同类型的对象
     }
 }
 

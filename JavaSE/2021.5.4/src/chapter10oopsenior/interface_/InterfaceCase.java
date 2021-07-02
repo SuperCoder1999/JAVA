@@ -55,7 +55,7 @@ class AA implements AInterface {
         System.out.println("123");
     }
 //    public static void f1() {
-//        System.out.println("wode");
+//        System_.out.println("wode");
 //    }//静态方法可以重写静态方法，静态方法不能重写普通方法
 
     public void f1() {

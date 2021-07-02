@@ -13,7 +13,7 @@ public class PolyArr {
             // 这里都是向下转型
 //            if (i instanceof Person)// 判断的是是不是Person类或Person类的子类
 //            {
-//                System.out.println("没有运行之后的");
+//                System_.out.println("没有运行之后的");
 //            }
 //            else
             if (i instanceof Students) {// 这里判断的是运行类型

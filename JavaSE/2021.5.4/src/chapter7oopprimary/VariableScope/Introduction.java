@@ -29,12 +29,12 @@ class Cat {
     //知识点 3 局部变量作用域
     public void Eat() {
         System.out.println(age);// 全局变量作用于 整个类
-        //System.out.println(n);// 错误，局部变量只能作用于 定义它的代码块中
+        //System_.out.println(n);// 错误，局部变量只能作用于 定义它的代码块中
     }
 
     //知识点 4 全局变量定义时会自动赋值，就可以直接使用；局部变量定义后必须赋值才能使用。
     public void Sleep() {
         int time;
-        //System.out.println(init + time);//time必须初始化才能使用
+        //System_.out.println(init + time);//time必须初始化才能使用
     }
 }

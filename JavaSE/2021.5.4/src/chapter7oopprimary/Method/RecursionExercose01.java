@@ -13,7 +13,7 @@ public class RecursionExercose01 {
         n = myScanner.nextInt();
         Recursion aRecursion = new Recursion();
         int res = aRecursion.fiboArray(n);
-        //System.out.println("第" + n + "个斐波那契数 = " + res);
+        //System_.out.println("第" + n + "个斐波那契数 = " + res);
         System.out.println(aRecursion.peach(1));
     }
 }

@@ -41,7 +41,7 @@ abstract class Animal {
     //===> 当一个类中存在抽象方法时，需要将该类声明为abstract类
     //===> 一般来说，抽象类会被继承，有其子类来实现抽象方法.
 //    public void eat() {
-//        System.out.println("这是一个动物，但是不知道吃什么..");
+//        System_.out.println("这是一个动物，但是不知道吃什么..");
 //    }
     public abstract void eat();
 }

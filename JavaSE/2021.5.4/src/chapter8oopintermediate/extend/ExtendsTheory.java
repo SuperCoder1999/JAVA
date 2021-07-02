@@ -17,7 +17,7 @@ public class ExtendsTheory {
         System.out.println(son.getSalary());
 
         //遇到私有属性之后，就会报错，不会再找上级父类的属性
-        //System.out.println(son.score); // 之后还会告诉怎么跳过，访问Grandpa中的score
+        //System_.out.println(son.score); // 之后还会告诉怎么跳过，访问Grandpa中的score
     }
 }
 /*

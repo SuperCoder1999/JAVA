@@ -57,7 +57,7 @@ class A extends Base {
     }
 
 //    public A(String name) {
-//        System.out.println("Base类的构造器");
+//        System_.out.println("Base类的构造器");
 //    }
 }
 
@@ -101,7 +101,7 @@ class B extends A {
         System.out.println(super.n1);
         System.out.println(n2);
         System.out.println(this.n2);
-        //System.out.println(super.n2);报错
+        //System_.out.println(super.n2);报错
 
     }
 

@@ -1,18 +1,24 @@
 package chapter13commonclass.string;
 
+/*
+    同样，String中的各种方法最终都是返回了一个String对象。保证修改前后对象类型不变
+ */
+
 public class StringMethods02 {
     public static void main(String[] args) {
-        // 1.toUpperCase转换成大写
+        // 1.toUpperCase转换成大写,对原来的String对象没有做修改，而是返回新的String对象
         String s = "heLLo";
         System.out.println(s.toUpperCase());//HELLO
+        System.out.println(s);
 
         // 2.toLowerCase
         System.out.println(s.toLowerCase());//hello
 
-        // 3.concat拼接字符串
+        // 3.concat拼接字符串,也是返回新数组
         String s1 = "宝玉";
         s1 = s1.concat("林黛玉").concat("薛宝钗").concat("together");
         System.out.println(s1);//宝玉林黛玉薛宝钗together
+
 
         // 4.replace 替换字符串中的字符
         s1 = "宝玉 and 林黛玉 林黛玉 林黛玉";

@@ -30,7 +30,7 @@ package chapter10oopsenior.innerclass.anonymousinnerclass;
             class Outer04$1 implements IA {
                 @Override
                 public void cry() {
-                    System.out.println("老虎叫唤...");
+                    System_.out.println("老虎叫唤...");
                 }
             }
 
@@ -64,7 +64,7 @@ class Outer04 { //外部类
             class Outer04$1 implements IA {
                 @Override
                 public void cry() {
-                    System.out.println("老虎叫唤...");
+                    System_.out.println("老虎叫唤...");
                 }
             }
          */
@@ -95,7 +95,7 @@ class Outer04 { //外部类
             class Outer04$2 extends Father{
                 @Override
                 public void test() {
-                    System.out.println("匿名内部类重写了test方法");
+                    System_.out.println("匿名内部类重写了test方法");
                 }
             }
          */
@@ -130,13 +130,13 @@ interface IA {//接口
 //
 //    @Override
 //    public void cry() {
-//        System.out.println("老虎叫唤...");
+//        System_.out.println("老虎叫唤...");
 //    }
 //}
 //class Dog implements  IA{
 //    @Override
 //    public void cry() {
-//        System.out.println("小狗汪汪...");
+//        System_.out.println("小狗汪汪...");
 //    }
 //}
 

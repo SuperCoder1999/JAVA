@@ -42,7 +42,7 @@ public class Homework04 {
     }
 }
 //        // 可以先输出下标看看是否正确
-//        System.out.print(index + "\n");
+//        System_.out.print(index + "\n");
 //        int[] arrNew = new int[arr.length + 1];
 //        if (index == -1) {
 //            for (int i = 0; i < arr.length; i++) {
@@ -59,7 +59,7 @@ public class Homework04 {
 //            }
 //        arr = arrNew;
 //        for (int i = 0; i < arr.length; i++) {
-//            System.out.print(arr[i] + " ");
+//            System_.out.print(arr[i] + " ");
 //        }
 
 //        // index != arr.length-1 的情况
@@ -79,6 +79,6 @@ public class Homework04 {
 //        }
 //        arr = arrNew;
 //        for (int i = 0; i < arr.length; i++) {
-//            System.out.print(arr[i] + " ");
+//            System_.out.print(arr[i] + " ");
 //        }
 

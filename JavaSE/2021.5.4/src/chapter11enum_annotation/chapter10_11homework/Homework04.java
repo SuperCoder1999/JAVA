@@ -33,7 +33,7 @@ interface Calc {
 
 
     public static void main(String[] args) {
-        System.out.println(Homework04.testWork(new Calc(){// 匿名内部类是没有构造器的
+        System_.out.println(Homework04.testWork(new Calc(){// 匿名内部类是没有构造器的
             @Override
             public double work(double x1,double x2) {
                 return x1 + x2;

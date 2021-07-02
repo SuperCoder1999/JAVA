@@ -25,10 +25,11 @@ public class IdeaUse {
         7.生成构造器：alt + insert
         8.查看类的层级关系（Diagrams） ： 光标放在类名上，Ctrl + H ，看类的继承关系
         9.光标放在一个方法上，Ctrl + b ，可以定位到该方法(类)的定义区域（继承中很好用）(也可以用来看JDK源码）
-        10.自动分配变量名：new Scanner(System.in).var回车
+        10.自动分配变量名：new Scanner(System_.in).var回车
         11 alt + enter:自动添加类的包
         12.10000.for 就会创建10000次循环的for循环
         13.将该代码块->选中->快捷键 ctrl + alt + t -> 选中 trycatch-catch
+        14.在接口处CTRL+alt+b   查看实现该接口的类
 
         二：模板（File--Settings--Editor--Live templates,选择范围java）
         1.main回车

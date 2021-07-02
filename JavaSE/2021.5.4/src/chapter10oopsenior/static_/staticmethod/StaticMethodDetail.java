@@ -34,16 +34,16 @@ class D {
     public static void hi() {//静态方法,类方法
         //类方法中不允许使用和对象有关的关键字，
         //比如this和super。普通方法(成员方法)可以。
-        //System.out.println(this.n1);
+        //System_.out.println(this.n1);
     }
 
     //类方法(静态方法)中 只能访问 静态变量 或静态方法
     //口诀:静态方法只能访问静态成员.
     public static void hello() {
-        //System.out.println(n1);//n1不是静态成员
+        //System_.out.println(n1);//n1不是静态成员
         System.out.println((n2+=10));
         System.out.println((D.n2+=10));
-        //System.out.println(this.n2);不能使用
+        //System_.out.println(this.n2);不能使用
         hi();//OK
         //say();//错误
         new D().say();//这样就可以实现在类方法中调用非静态类的成员

@@ -3,7 +3,7 @@ package chapter10oopsenior.final_.exercise;
 public class Exercise01 {
     public static void main(String[] args) {
         System.out.println(new Circle(3).Area());
-        //System.out.println(Circle.Area(3));
+        //System_.out.println(Circle.Area(3));
     }
 }
 

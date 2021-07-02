@@ -2,7 +2,7 @@ package chapter7oopprimary.ChapterHomeworks;
 
 /*
     在测试方法中，调用method方法的形式如下：
-    System.out.println(method(method(method(10.0, 20.0), 100);
+    System_.out.println(method(method(method(10.0, 20.0), 100);
     上面的代码编译正确，试泄而出method方法的定义形式
  */
 public class Homework11 {

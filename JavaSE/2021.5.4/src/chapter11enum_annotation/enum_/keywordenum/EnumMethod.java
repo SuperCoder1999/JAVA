@@ -55,14 +55,14 @@ public class EnumMethod {
         //补充了一个增强for
 //        int[] nums = {1, 2, 9};
 //        //普通的for循环
-//        System.out.println("=====普通的for=====");
+//        System_.out.println("=====普通的for=====");
 //        for (int i = 0; i < nums.length; i++) {
-//            System.out.println(nums[i]);
+//            System_.out.println(nums[i]);
 //        }
-//        System.out.println("=====增强的for=====");
+//        System_.out.println("=====增强的for=====");
 //        //执行流程是 依次从nums数组中取出数据，赋给i, 如果取出完毕，则退出for
 //        for(int i : nums) {
-//            System.out.println("i=" + i);
+//            System_.out.println("i=" + i);
 //        }
     }
 }

@@ -75,7 +75,7 @@ class C02 {
 
     static {
         //静态代码块，只能调用静态成员
-        //System.out.println(n1);错误
+        //System_.out.println(n1);错误
         System.out.println(n2);//ok
         //m1();//错误
         m2();

@@ -2,7 +2,7 @@ package chapter12exception.homeworks;
 
 /*
     输出结果:
-    B   注意 System.out.println("A"); 由于有异常而不会执行
+    B   注意 System_.out.println("A"); 由于有异常而不会执行
     C
     D
  */

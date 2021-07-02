@@ -55,7 +55,7 @@ class Outer05 {
 //        new Person(){
 //            @Override
 //            public void hi() {
-//                System.out.println("匿名内部类重写了 hi方法,哈哈...");
+//                System_.out.println("匿名内部类重写了 hi方法,哈哈...");
 //            }
 //            @Override
 //            public void ok(String str) {

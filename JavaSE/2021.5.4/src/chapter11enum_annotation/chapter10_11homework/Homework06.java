@@ -109,7 +109,7 @@ class Person {
     }
 
     public void test() {
-        System.out.println(name + vehicles.work());
+        System_.out.println(name + vehicles.work());
     }
 }
 interface Vehicles {

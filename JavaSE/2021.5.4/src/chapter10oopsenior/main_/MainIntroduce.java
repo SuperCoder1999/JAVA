@@ -35,7 +35,7 @@ public class MainIntroduce {
         System.out.println("name=" + name);
         hi();
         //2. 静态方法main 不可以访问本类的非静态成员
-        //System.out.println("n1=" + n1);//错误
+        //System_.out.println("n1=" + n1);//错误
         //cry();
         //3. 静态方法main 要访问本类的非静态成员，需要先创建对象 , 再调用即可
         MainIntroduce main01 = new MainIntroduce();

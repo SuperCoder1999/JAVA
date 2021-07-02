@@ -8,7 +8,7 @@ package chapter5control.homework;
         public staticparameter void main(String[] args) {
             int money;
             int count = 0;
-            Scanner myScanner = new Scanner(System.in);
+            Scanner myScanner = new Scanner(System_.in);
             money = myScanner.nextInt();
             money = 100000;
             while (money >= 0) {
@@ -20,7 +20,7 @@ package chapter5control.homework;
                     count++;
                 }
             }
-            System.out.println(--count);
+            System_.out.println(--count);
         }
     }
 */

@@ -158,11 +158,11 @@ class Scientist extends Person05 {
 
 /*public class Homework05 {
     public staticparameter void main(String[] args) {
-        System.out.println(new Worker05("Jack", 50000).yearSal());
-        System.out.println(new Peasant05("Tom", 40000).yearSal());
-        System.out.println(new Teacher05("Smith", 30000, 200, 10).yearSal());
-        System.out.println(new Scientist("小明", 100000, 200000).yearSal());
-        System.out.println(new Waiter05("小强", 10000).yearSal());
+        System_.out.println(new Worker05("Jack", 50000).yearSal());
+        System_.out.println(new Peasant05("Tom", 40000).yearSal());
+        System_.out.println(new Teacher05("Smith", 30000, 200, 10).yearSal());
+        System_.out.println(new Scientist("小明", 100000, 200000).yearSal());
+        System_.out.println(new Waiter05("小强", 10000).yearSal());
     }
 }
 

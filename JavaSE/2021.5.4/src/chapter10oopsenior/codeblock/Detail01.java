@@ -21,7 +21,7 @@ public class Detail01 {
         //2. 创建子类对象实例，父类也会被加载, 而且，父类先被加载，子类后被加载
         // AA aa2 = new AA();
         //3. 使用类的静态成员时(静态属性，静态方法)
-        // System.out.println(Cat.n1);
+        // System_.out.println(Cat.n1);
 
         //static代码块，是在类加载时，执行的，而且只会执行一次.
 //        DD dd = new DD();

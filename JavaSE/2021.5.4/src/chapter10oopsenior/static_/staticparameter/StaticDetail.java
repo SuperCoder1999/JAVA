@@ -17,7 +17,7 @@ package chapter10oopsenior.static_.staticparameter;
 public class StaticDetail {
     public static void main(String[] args) {
         B b = new B();
-        //System.out.println(B.n1);
+        //System_.out.println(B.n1);
         System.out.println(B.n2);
 
         //静态变量是类加载的时候，就创建了,所以我们没有创建对象实例

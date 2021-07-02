@@ -22,7 +22,7 @@ public class PolyDetail03 {
         System.out.println(str instanceof Object);//str 的运行类型是Object的子类型
         System.out.println(str instanceof String);//str 的运行类型是String类型
 
-        //System.out.println(str instanceof B);// str 和 B 没有继承关系，所以不能比较（提示说：不能将str强制转换为B）
+        //System_.out.println(str instanceof B);// str 和 B 没有继承关系，所以不能比较（提示说：不能将str强制转换为B）
     }
 }
 

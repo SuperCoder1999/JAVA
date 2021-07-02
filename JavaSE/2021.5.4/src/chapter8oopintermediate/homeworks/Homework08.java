@@ -4,9 +4,9 @@ public class Homework08 {
     public static void main(String[] args) {
 //        CheckingAccount tom = new CheckingAccount(1000);
 //        tom.deposit(100);
-//        System.out.println(tom.getBalance());//1099
+//        System_.out.println(tom.getBalance());//1099
 //        tom.withdraw(99);
-//        System.out.println(tom.getBalance());//999
+//        System_.out.println(tom.getBalance());//999
 
         SavingAccount jack = new SavingAccount(1000);
         jack.deposit(100);//1100

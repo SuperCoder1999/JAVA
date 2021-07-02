@@ -1,5 +1,9 @@
 package chapter13commonclass.mathmethods;
 
+/*
+    math方法都是静态的可以直接调用
+ */
+
 public class MathMethods {
     public static void main(String[] args) {
         //看看Math常用的方法(静态方法)
