@@ -15,9 +15,9 @@ public class IdeaUse {
         7. 模板：main
 
         一： 快捷键（https://blog.csdn.net/xinghuo0007/article/details/78441574）
-            Keymap中搜索
+            也可在 Keymap 中搜索
         1.删除行：Ctrl + Y
-        2.复制当前行：（Duplicate）
+        2.复制当前行：（Duplicate） 将光标放在默认所在行 Ctrl+c 即可
         3.补全代码：alt + /
         4.添加注释：Ctrl + /
         5.快速导入类：File--settings--Editor--General--Auto import 或者快捷键 Alt + Enter
@@ -28,8 +28,14 @@ public class IdeaUse {
         10.自动分配变量名：new Scanner(System_.in).var回车
         11 alt + enter:自动添加类的包
         12.10000.for 就会创建10000次循环的for循环
-        13.将该代码块->选中->快捷键 ctrl + alt + t -> 选中 trycatch-catch
+        13.try-catch处理异常：将该代码块->选中->快捷键 ctrl + alt + t -> 选中 try-catch
         14.在接口处CTRL+alt+b   查看实现该接口的类
+        15.显示所有的快捷模板的的快捷键 ctrl + j
+        16.快捷模板键，快速生成 while (iterator.hasNext()) => itit Iterator迭代器
+        17.快捷模板键 I   快速生成 for (Object book : col){} 增强for循环
+        18.将字符串输出："hello".sout 即可
+        19.setting - Build,Execution,Deployment -
+        Debugger - Java - Enable alternative view for Collections classes在Debugger时可以显示全部集合元素
 
         二：模板（File--Settings--Editor--Live templates,选择范围java）
         1.main回车
@@ -48,6 +54,5 @@ public class IdeaUse {
         java Hello - 运行
         javap Hello.class
          */
-
     }
 }
