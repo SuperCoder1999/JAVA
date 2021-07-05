@@ -25,6 +25,22 @@ import java.util.ArrayList;
     4. Java泛型可以保证如果程序在编译时没有发出警告，运行时就不会产生ClassCastException异常。同时，代码更加简介、健壮。
     5. 泛型的作用：可以在类声明时通过一个标识<E>表示类中某个属性的类型，或者是某个方法的返回值的类型，或者是参数类型。
        所以泛型作用于：属性、局部变量、方法、参数类型（传入的形参）
+
+   四：泛型的语法
+   1. 泛型的声明
+   interface 接口名<T,E...>{] 和 class 类名<K,V,E...>{]
+   说明：
+    1）T，V，E不代表值，而是存放类型的形参，用于接收传入的类型
+    2）任意字母都可以。常用T表示，是Type的缩写
+
+    2. 泛型的实例
+    要在类名后指定类型参数的值(即传入类型)
+    1）List<String> strList = new ArrayList<String>();
+    2)Iterator<Customer> iterator = customers.iterator();
+     说明：
+        1)传入类型实参的类/接口必须有接收的形参，即需要泛型的声明
+        2)声明了多少泛型形参，就要传入多少个
+
  */
 
 @SuppressWarnings({"all"})
@@ -49,8 +65,6 @@ public class Introduce {
         for (Dog dog : arrayList) {
             System.out.println(dog.getName() + "-" + dog.getAge());
         }
-
-
     }
 }
 

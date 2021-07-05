@@ -18,6 +18,8 @@ package chapter13commonclass.wrappertype;
     long                Long
     float               Float
     double              Double
+
+    3. Integer 默认参数是 null（引用类型的默认应该都是null）
  */
 public class Introduce {
 }

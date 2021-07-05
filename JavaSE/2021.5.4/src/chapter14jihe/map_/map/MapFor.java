@@ -45,7 +45,9 @@ public class MapFor {
         }
 
         //第二组: 把所有的values取出。不关心对应关系，值想取出value的情况下适用
-        Collection values = map.values();//返回的是Collection类型的集合
+            // -- 也可以在keySet中get(key)来间接获取values
+        Collection values = map.values();
+        //本质返回的是Collection类型的集合
         //这里可以使用所有的Collections使用的遍历方法
         //(1) 增强for
         System.out.println("---取出所有的value 增强for----");
@@ -63,7 +65,7 @@ public class MapFor {
         //(3)普通for循环 values.size()
 
         //第三组: 通过EntrySet 来获取 k-v
-        Set entrySet = map.entrySet();// EntrySet<Map.Entry<K,V>>
+        Set entrySet = map.entrySet();// 返回： Set<Map.Entry<K, V>>
         //(1) 增强for
         System.out.println("----使用EntrySet 的 for增强(第3种)----");
         for (Object entry : entrySet) {
@@ -77,7 +79,7 @@ public class MapFor {
         while (iterator3.hasNext()) {
             Object entry =  iterator3.next();//迭代器默认返回的是Object类型
             //System.out.println(next.getClass());//HashMap$Node -实现-> Map.Entry (getKey,getValue)
-            //向下转型 Map.Entry [因为HashMap$Node没有提供遍历的方法]
+            //向下转型 Map.Entry [因为Object 及 HashMap$Node没有提供遍历的方法]
             Map.Entry m = (Map.Entry) entry;
             System.out.println(m.getKey() + "-" + m.getValue());
         }

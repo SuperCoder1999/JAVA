@@ -17,7 +17,7 @@ public class InterfaceDetail01 {
 
 
 interface IA {
-    void say();//修饰符 public protected 默认 private
+    void say();//修饰符可以使用 public protected 默认 private
 
     void hi();
 }

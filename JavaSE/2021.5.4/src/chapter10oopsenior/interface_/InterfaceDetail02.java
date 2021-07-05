@@ -7,9 +7,10 @@ package chapter10oopsenior.interface_;
     二：细节
     5. 一个类同时可以实现多个接口
     6. 接口中的属性,是 public static final（public、static、final可以省略）
-    7. 接口中属性的访问形式：接口名.属性名
+    7. 接口中属性的访问形式：接口名.属性名。和静态变量一样
     8. 接口不能继承其它的类,但是可以继承多个别的接口
     9. 接口的修饰符 只能是 public 和默认，这点和类的修饰符是一样的
+    10. 接口中 实现接口的类作为 父类，其子类不用再实现接口中的抽象类
  */
 
 public class InterfaceDetail02 {
