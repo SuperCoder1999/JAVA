@@ -27,7 +27,7 @@ public class MyPanel extends JPanel {
      * @param y      坦克的左上角y坐标
      * @param g      画笔
      * @param direct 坦克方向（上下左右）
-     * @param type   坦克类型
+     * @param type   坦克类型 0： 敌方   1：己方
      */
     public void drawTank(int x, int y, Graphics g, int direct, int type) {
         switch (type) {
@@ -45,10 +45,13 @@ public class MyPanel extends JPanel {
                 g.fill3DRect(x + 30, y, 10, 60, false);//画出坦克右边轮子
                 g.fillOval(x + 10, y + 20, 20, 20);//画出圆形盖子
                 g.drawLine(x + 20, y, x + 20, y + 30);//画出炮筒
-                // false和true的比较，false更亮些
-//                g.setColor(Color.cyan);
+
+                // fillRect fill3DRect(true) 几乎没有区别
+                // fill3DRect(false) 更暗一些
+//                g.fillRect(300,100,100,200);
+//                g.fill3DRect(300,350,100,200,true);
 //                g.fill3DRect(300,600,100,200,false);
-//                g.fill3DRect(300,100,100,200,true);
+
                 break;
             default:
                 System.out.println("暂时没有处理");

@@ -10,7 +10,7 @@ package chapter14jihe.collection_.list_;
     三：LinkedList、ArrayList 和 Vector 的选择
     1. 如果查改的操作多 ： ArrayList
     2. 如果增删的操作多 ： LinkedList
-    3. 双线程         ： Vector
+    3. 双线程         ： Vector (ArrayList\LinkedList 都不是线程安全的）
     4. 一般，业务中80~90%都是查询，所以大部分情况下 ArrayList
     5. 在一个项目中，灵活选择，可以在一个模块中使用ArrayList，一个模块使用LinkedList。根据业务进行选择
  */

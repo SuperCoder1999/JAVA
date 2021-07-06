@@ -17,6 +17,12 @@ package chapter14jihe;
         2) 键排序：TreeMap
         3）键插入和取出顺序一致：LinkedHashMap
         4）读取文件：Properties
+
+    二：线程安全性
+    双线程         ： Vector
+    ArrayList、LinkedList 不安全
+    HashMap（TreeSet\TreeMap底层走的是HashMap)      不安全
+    Hashtable     安全
  */
 
 public class HowToChoose {
