@@ -44,9 +44,18 @@ public class MyPanel extends JPanel implements KeyListener , Runnable{
 
         drawTank(myTank.getX(), myTank.getY(), g, myTank.getDirect(), myTank.getType());
 
-        if (myTank.shot != null && myTank.shot.isLive) { // 在没有按下j的情况下，shot并没有被创建
-            System.out.println("子弹被绘制");
-            g.fill3DRect(myTank.shot.x,myTank.shot.y,1,1,false);
+//        //画出myTank的子弹
+//        if (myTank.shot != null && myTank.shot.isLive) { // 在没有按下j的情况下，shot并没有被创建
+//            System.out.println("子弹被绘制");
+//            g.fill3DRect(myTank.shot.x,myTank.shot.y,1,1,false);
+//        }
+
+        //绘制myTank子弹集合
+        for (Shot s : myTank.shots) {
+            if (s != null && s.isLive)
+                g.fill3DRect(s.x, s.y, 1, 1, false);
+            else
+                myTank.shots.remove(s);
         }
 
         for (int i = 0; i < bombs.size(); i++) {
@@ -75,6 +84,22 @@ public class MyPanel extends JPanel implements KeyListener , Runnable{
                     } else {
                         enemyTank.shots.remove(j);
                     }
+                }
+            }
+        }
+    }
+
+    public void hitEnemyTank() {
+                //遍历我们的子弹
+        for(int j = 0;j < myTank.shots.size();j++) {
+            Shot shot = myTank.shots.get(j);
+            //判断是否击中了敌人坦克
+            if (shot != null && myTank.shot.isLive) {//当我的子弹还存活
+
+                //遍历敌人所有的坦克
+                for (int i = 0; i < enemyTanks.size(); i++) {
+                    EnemyTank enemyTank = enemyTanks.get(i);
+                    hitTank(myTank.shot, enemyTank);
                 }
             }
         }
@@ -137,7 +162,11 @@ public class MyPanel extends JPanel implements KeyListener , Runnable{
         }
         //如果用户按下的是J,就发射
         if(e.getKeyCode() == KeyEvent.VK_J) {
-            System.out.println("用户按下了J, 开始射击.");
+//            //判断hero的子弹是否销毁,发射一颗子弹
+//            if (myTank.shot == null || !myTank.shot.isLive) {
+//                System.out.println("用户按下了J, 开始射击.");
+//                myTank.shotEnemyTank();
+//            }
             myTank.shotEnemyTank();
         }
         this.repaint();
@@ -205,12 +234,15 @@ public class MyPanel extends JPanel implements KeyListener , Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            if (myTank.shot != null && myTank.shot.isLive) {
-                for (int i = 0; i < enemyTanks.size(); i++) {
-                    EnemyTank enemyTank = enemyTanks.get(i);
-                    hitTank(myTank.shot, enemyTank);
-                }
-            }
+//            if (myTank.shot != null && myTank.shot.isLive) {
+//                for (int i = 0; i < enemyTanks.size(); i++) {
+//                    EnemyTank enemyTank = enemyTanks.get(i);
+//                    hitTank(myTank.shot, enemyTank);
+//                }
+//            }
+            //判断是我们子弹否击中了敌人坦克
+            hitEnemyTank();
+
             this.repaint();
             //System.out.println("重绘"); 从这里可以看出，即使窗口并没有变化，还是在重绘
         }

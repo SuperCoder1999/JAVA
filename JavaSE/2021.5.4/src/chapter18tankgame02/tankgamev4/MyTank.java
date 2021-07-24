@@ -1,13 +1,22 @@
 package chapter18tankgame02.tankgamev4;
 
+import java.util.Vector;
+
 public class MyTank extends FatherTank {
     //定义一个Shot对象, 表示一个射击(线程)
     Shot shot = null;
+    //可以发射多颗子弹
+    Vector<Shot> shots = new Vector<>();
     public MyTank(int x, int y, int direct, int speed, int type) {
         super(x, y, direct,speed, type);
     }
 
     public void shotEnemyTank() {
+        //要求最多5颗子弹
+        if (shots.size() >= 5) {
+            return;
+        }
+
         //创建 Shot 对象, 根据当前Hero对象的位置和方向来创建Shot
         switch (getDirect()) {//得到Hero对象方向
             case 0: //向上
@@ -23,6 +32,8 @@ public class MyTank extends FatherTank {
                 shot = new Shot(getX(), getY() + 20, 3);
                 break;
         }
+        //把新创建的shot放入到shots中
+        shots.add(shot);
         //启动我们的Shot线程
         new Thread(shot).start();
     }
