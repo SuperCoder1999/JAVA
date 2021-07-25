@@ -3,7 +3,7 @@ package chapter10oopsenior.abstract_;
     一: 细节：
     1. 抽象类不能实例化
     2. 抽象类不一定有抽象方法，抽象类可以没有抽象方法
-    3. 一旦类帮喊了abstract方法，则这个类必须声明为abstract
+    3. 一旦类包含了abstract方法，则这个类必须声明为abstract
     4. abstract只能修饰类和方法，不能修饰属性或其他的
 
  */
