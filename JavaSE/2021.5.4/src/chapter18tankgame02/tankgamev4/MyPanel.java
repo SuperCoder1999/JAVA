@@ -35,6 +35,8 @@ public class MyPanel extends JPanel implements KeyListener , Runnable{
         image1 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/bomb_1.gif"));
         image2 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/bomb_2.gif"));
         image3 = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource("/bomb_3.gif"));
+        //image3 = Toolkit.getDefaultToolkit().getImage("e:\\ok.jpg");
+
     }
 
     @Override
