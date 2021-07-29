@@ -15,6 +15,12 @@ public class StringToBasic {
         String s4 = b1 + "";
         System.out.println(s1 + " " + s2 + " " + s3 + " " + s4);
 
+        // 注意特殊情况, 会先计算再转换成String。“” 在前面才能完全字符串化
+        String s10 = 1 + 2 + "woshi";
+
+        // str.valueOf(int a); 可以将int转变为 String 
+
+
         //String -> 基本数据类型
         String s5 = "123";
         //学完OOP，理解基本类、函数后再来细细琢磨
