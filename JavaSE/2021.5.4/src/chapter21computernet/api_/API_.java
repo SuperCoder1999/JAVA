@@ -1,4 +1,4 @@
-package chapter21api;
+package chapter21computernet.api_;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

@@ -12,7 +12,7 @@ public class IdeaUse {
         5. 编码设置
         6. 双击.java标签，可以隐藏资源管理器
 
-        7. 模板：main
+        7. 模板：main/psvm都能调用main模板
 
         一： 快捷键（https://blog.csdn.net/xinghuo0007/article/details/78441574）
             也可在 Keymap 中搜索
