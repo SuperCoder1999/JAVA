@@ -16,6 +16,7 @@ public class NarcissusNumber {
             int sum = 0;
             while (num > 0) {
                 sum += Math.pow(num % 10, count(i));
+                // 因为复合运算符可以自动强制类型转换，所以没有报错
                 // 不同位数的水仙花数 是 不同的次方
                 num /= 10;
             }
@@ -23,6 +24,7 @@ public class NarcissusNumber {
                 System.out.print(i + "\t");
         }
     }
+    // 得到该数字是几位数
     public static int count(int num) {
         int count = 0;
         while (num > 0) {
