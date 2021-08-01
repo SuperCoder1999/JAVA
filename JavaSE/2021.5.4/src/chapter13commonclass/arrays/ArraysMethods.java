@@ -25,6 +25,7 @@ public class ArraysMethods {
         }
          */
         //新方式：直接使用Arrays.toString方法，显示数组
+        //可以返回一个字符串
         System.out.println(Arrays.toString(integers));//
 
 
@@ -101,6 +102,23 @@ public class ArraysMethods {
         Integer[] newArr = Arrays.copyOf(arr1, arr1.length);
         System.out.println("==拷贝执行完毕后==");
         System.out.println(Arrays.toString(newArr));
+
+        // 拷贝数组的区间
+        // 技巧：出现from-to一般是左闭右开区间：[)
+        int ret2 = Arrays.copyOfRange(arr1, 1, 3); // [1,3)
+        System.out.println(Arrays.toString(rets));
+
+        // 拷贝方法三：arraycopy(arr,0, copy, 0, arr.length);
+        int[] arr3 = {1, 2, 3, 4};
+        int[] copy = new int[arr3.length];
+        System.arraycopy(arr3,0, copy,0,arr3.length);
+        //从arr3的下标0开始拷贝，拷贝到copy的0下标开始，拷贝arr3.length长度
+        
+        // 拷贝方法四：int[] arr6 = arr5.clone();
+        int[] arr5 = {1,2,3};
+        int[] arr6 = arr5.clone();
+        System.out.println(Arrays.toString(arr6));
+
 
     //ill 数组元素的填充
         Integer[] num = new Integer[]{9,3,2};
