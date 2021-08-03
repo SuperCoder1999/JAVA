@@ -1,4 +1,4 @@
-package Classroom.clas6classobject;
+package Classroom.class6classobject;
 
 /*
     1. 静态成员变量不属于实例对象而属于类
