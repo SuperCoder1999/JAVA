@@ -15,6 +15,8 @@ import java.util.ArrayList;
     3. 泛型方法中的 <T,R> 就是泛型  泛型方法被调用后就确定了，这些可以提供给 fly使用的 或者给局部变量等 方法内部成员使用
     3.public void hi(T t) {} 不是泛型方法，因为public 后面没有<> 标识符。这里 hi方法使用了类声明的 泛型 而已
 
+    疑问：泛型方法有什么作用?泛型类的作用也是不太掌握。
+
  */
 
 @SuppressWarnings({"all"})

@@ -1,7 +1,7 @@
 package homeworks.class7;
 
 /*
-    1. 第四题：static不能修饰局部变量
+    1. 第三题：static不能修饰局部变量
 
     2. 第9题：不太懂
     以下哪项不属于java类加载过程？
@@ -14,18 +14,38 @@ package homeworks.class7;
 
 public class Knowledge {
     public static void main(String args[]){
-        Test4.test();
+        Test3.test();
 
         Test7 test7 = new Test7();
         //test7.x++; 报错
         //Test7.x++; 报错
+
+        Test1_1 test1_1 = new Test1_1();
+        test1_1.test();
+    }
+}
+
+/*
+    第一题：注意 hello() 是 static 方法
+    所以编译通过，并且正确运行
+ */
+class Test1 {
+    public static void hello() {
+        System.out.println("hello");
+    }
+}
+class Test1_1{
+    public void test() {
+        // TODO Auto-generated method stub
+        Test1 test=null;
+        test.hello();
     }
 }
 
 /*
     验证 static是否能修饰局部变量
  */
-class Test4 {
+class Test3 {
     public int aMethod(){
         //static int i = 0;
         int i = 0;
@@ -33,9 +53,9 @@ class Test4 {
         return i;
     }
     public static void test(){
-        Test4 test4 = new Test4();
-        test4.aMethod();
-        int j = test4.aMethod();
+        Test3 test3 = new Test3();
+        test3.aMethod();
+        int j = test3.aMethod();
         System.out.println(j);
     }
 }

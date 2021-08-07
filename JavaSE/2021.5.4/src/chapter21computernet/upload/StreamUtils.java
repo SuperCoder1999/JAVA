@@ -13,9 +13,6 @@ import java.io.InputStreamReader;
 public class StreamUtils {
 	/**
 	 * 功能：将输入流转换成byte[]
-	 * @param is
-	 * @return
-	 * @throws Exception
 	 */
 	public static byte[] streamToByteArray(InputStream is) throws Exception{
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();//创建输出流对象
@@ -31,9 +28,6 @@ public class StreamUtils {
 	}
 	/**
 	 * 功能：将InputStream转换成String
-	 * @param is
-	 * @return
-	 * @throws Exception
 	 */
 	
 	public static String streamToString(InputStream is) throws Exception{

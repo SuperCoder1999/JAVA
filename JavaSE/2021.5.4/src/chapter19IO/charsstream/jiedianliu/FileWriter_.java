@@ -1,4 +1,4 @@
-package chapter19IO.bytesstream.jiedianliu.file;
+package chapter19IO.charsstream.jiedianliu;
 
 import java.io.FileWriter;
 import java.io.IOException;

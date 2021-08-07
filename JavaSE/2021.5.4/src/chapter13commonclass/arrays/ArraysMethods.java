@@ -105,8 +105,8 @@ public class ArraysMethods {
 
         // 拷贝数组的区间
         // 技巧：出现from-to一般是左闭右开区间：[)
-        int ret2 = Arrays.copyOfRange(arr1, 1, 3); // [1,3)
-        System.out.println(Arrays.toString(rets));
+        //int ret2 = Arrays.copyOfRange(arr1, 1, 3); // [1,3)
+        //System.out.println(Arrays.toString(rets));
 
         // 拷贝方法三：arraycopy(arr,0, copy, 0, arr.length);
         int[] arr3 = {1, 2, 3, 4};
