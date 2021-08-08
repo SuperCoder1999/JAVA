@@ -24,7 +24,9 @@ import java.net.Socket;
 
 public class SocketTCP03Client {
     public static void main(String[] args) throws IOException {
+        //向InetAddress.getLocalHost(), 9999 发起链接
         Socket socket = new Socket(InetAddress.getLocalHost(), 9999);
+        //链接完成就会 创建一个 socket对象。在这个对象上可以获取 输出流
         OutputStream outputStream = socket.getOutputStream();
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
         outputStreamWriter.write("hello server");
@@ -38,7 +40,7 @@ public class SocketTCP03Client {
             System.out.println(line);
         }
 
-        outputStream.close();
+        outputStreamWriter.close();
         bufferedReader.close();
         socket.close();
     }

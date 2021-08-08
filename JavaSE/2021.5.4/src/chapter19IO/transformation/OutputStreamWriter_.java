@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * 演示 OutputStreamWriter 使用
  * 把FileOutputStream 字节流，转成字符流 OutputStreamWriter
- * 这样，就可以 以字节流 但是用字符流的方式 写入 字符
+ * 这样，就可以 以字节流 但是用字符流的方式 写入 字符.意思是表面上写出的是字符，实则流上传输的是字节
  * 指定处理的编码 gbk/utf-8/utf8
  */
 

@@ -19,8 +19,9 @@ public class StreamUtils {
 		byte[] b = new byte[1024];
 		int len;
 		while((len=is.read(b))!=-1){
-			bos.write(b, 0, len);	// 这句话什么意思？是将数据存在b还是bos
-			// 并且这里并没有用到 InputStream?
+			bos.write(b, 0, len);
+			/* bos中有个一个缓存区byte数组。数据是在b中，然后写入到bos中。
+			 is.read(b)就是从is输入流中读取的。*/
 		}
 		byte[] array = bos.toByteArray();
 		bos.close();
@@ -35,10 +36,9 @@ public class StreamUtils {
 		StringBuilder builder= new StringBuilder();
 		String line;
 		while((line=reader.readLine())!=null){ //当读取到 null时，就表示结束
-			builder.append(line+"\r\n");
+			builder.append(line+"\r\n");//这个换行符在不同系统内 用到的不一样。
+			//System.getProperty("line.separator") // 获取当前系统换行所需要的符号 \r、\n、\r\n
 		}
 		return builder.toString();
-		
 	}
-
 }

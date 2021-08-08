@@ -9,7 +9,7 @@ import java.net.Socket;
 
 public class SocketTCP03Server {
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(9999);
+        ServerSocket serverSocket = new ServerSocket(9999);//在端口9999监听
         Socket socket = serverSocket.accept();
         InputStreamReader inputStreamReader = new InputStreamReader(socket.getInputStream());
         char[] buf = new char[8];
