@@ -1,5 +1,9 @@
 package chapter10oopsenior.Template;
 
+/*
+    抽象模板模式
+ */
+
 public class TestTemplate {
     public static void main(String[] args) {
         new AA().calculateTime();
