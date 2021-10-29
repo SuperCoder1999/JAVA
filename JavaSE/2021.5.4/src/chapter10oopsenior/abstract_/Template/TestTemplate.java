@@ -1,4 +1,4 @@
-package chapter10oopsenior.Template;
+package chapter10oopsenior.abstract_.Template;
 
 /*
     抽象模板模式

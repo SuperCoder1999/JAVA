@@ -16,7 +16,7 @@ public class TCPFileUploadClient {
         FileInputStream fileInputStream = new FileInputStream("src\\chapter21computernet\\upload\\jt.jpg");
         BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
         //bytes 就是 所读取的文件对应的字节数组
-        byte[] bytes = StreamUtils.streamToByteArray(bufferedInputStream);
+        byte[] bytes = StreamUtils.streamToByteArray(bufferedInputStream);//这个流支持多大的空间？ 
 
         //通过socket获得的输出流，将bytes数据发送到服务端
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(socket.getOutputStream());

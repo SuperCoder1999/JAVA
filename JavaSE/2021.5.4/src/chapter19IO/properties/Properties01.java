@@ -20,7 +20,7 @@ public class Properties01 {
     public static void main(String[] args) throws IOException {
         // 使用Properties类来读取mySql.properties文件
 
-        //1. 船舰Properties对象
+        //1. 创建Properties对象
         Properties properties = new Properties();
         //2. 加载指定配置文件
         properties.load(new FileReader("src\\chapter19IO\\mySql.properties"));

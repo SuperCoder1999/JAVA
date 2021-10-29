@@ -23,6 +23,8 @@ import com.sun.media.sound.AiffFileReader;
         自己的属性；
         自己的方法；
         必须实现的接口的抽象方法
+        (abstract可以省略，因为抽接口是抽象类的极端情况，
+        接口不能有不抽象的方法，它的所有方法都要求也默认是抽象的，所以它不需要在方法前加abstract)
     }
  */
 public class InterfaceCase {

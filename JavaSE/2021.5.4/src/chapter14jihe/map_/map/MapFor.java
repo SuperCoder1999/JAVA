@@ -30,7 +30,7 @@ public class MapFor {
 
         //第一组: 先取出 所有的Key , 通过Key 取出对应的Value
         Set keyset = map.keySet();//因为取出来后放在了Set集合中，所以不能用普通for循环
-            //也可以用Collcetion来向上转型  本质返回Set类型集合
+            //也可以用Collcetion来向上转型  本质返回Set类型集合 Collcetion keyset = map.keySet();
         //(1) 增强for
         System.out.println("-----第一种方式-------");
         for (Object key : keyset) {
@@ -65,13 +65,14 @@ public class MapFor {
         //(3)普通for循环 values.size()
 
         //第三组: 通过EntrySet 来获取 k-v
-        Set entrySet = map.entrySet();// 返回： Set<Map.Entry<K, V>>
+        Set<Map.Entry<Byte, Integer>> entrySet = map.entrySet();// 返回： Set<Map.Entry<K, V>>。// --- 集合那一节需要改进
         //(1) 增强for
         System.out.println("----使用EntrySet 的 for增强(第3种)----");
-        for (Object entry : entrySet) {
+        for (Map.Entry entry : entrySet) {
             //将entry 转成 Map.Entry
-            Map.Entry m = (Map.Entry) entry;
-            System.out.println(m.getKey() + "-" + m.getValue());
+            /*Map.Entry m = (Map.Entry) entry;
+            System.out.println(m.getKey() + "-" + m.getValue());*/
+            System.out.println(entry.getKey() + "-" + entry.getValue());
         }
         //(2) 迭代器
         System.out.println("----使用EntrySet 的 迭代器(第4种)----");

@@ -29,7 +29,7 @@ public class IdeaUse {
         11 alt + enter:自动添加类的包
         12.10000.for 就会创建10000次循环的for循环
         13.try-catch处理异常：将该代码块->选中->快捷键 ctrl + alt + t -> 选中 try-catch
-        14.在接口处CTRL+alt+b   查看实现该接口的类
+        14.在接口处CTRL+alt+b   查看实现该接口的类 或者找子类
         15.显示所有的快捷模板的的快捷键 ctrl + j
         16.快捷模板键，快速生成 while (iterator.hasNext()) => itit Iterator迭代器
         17.快捷模板键 I   快速生成 for (Object book : col){} 增强for循环

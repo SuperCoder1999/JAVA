@@ -16,6 +16,7 @@ package chapter10oopsenior.innerclass.anonymousinnerclass;
        对象名  和  外部类名.this  指向同一地址
 
     二：匿名内部类 分析运用的时候最好还是想象成分开的形式，new是new的部分，大括号内的就当是新的类
+    可以认为，匿名内部类是正在实例化 的 类的子类、接口的实现类、抽象类的实现类
  */
 public class AnonymousInnerDetail {
     public static void main(String[] args) {
@@ -49,6 +50,7 @@ class Outer05 {
             }
         };
         p.hi();//动态绑定, 运行类型是 Outer05$1
+        p.ok("匿名内部类本身就是在外部类基础上变化来的，外部类还可以正常使用");
 
         //也可以直接调用, 匿名内部类本身也是返回对象
         // class 匿名内部类 extends Person {}

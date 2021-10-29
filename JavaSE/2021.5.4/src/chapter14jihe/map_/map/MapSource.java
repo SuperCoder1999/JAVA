@@ -6,10 +6,10 @@ import java.util.Set;
 
 /*
     MapIntroduce 后记
-    8. Map存放数据的key-value示意图，一堆k-v是放在一个HashMap$Node中的，又因为Node实现了Entry接口。
+    8. Map存放数据的key-value示意图，一对k-v是放在一个HashMap$Node中的，又因为Node实现了Entry接口。
     也可以说一对k-v就是一个Entry
 
-    总结：entrySet  keySet() 和 values() 都是Map实例对象提供的方法，用于转型并遍历
+    总结：entrySet()  keySet() 和 values() 都是Map实例对象提供的方法，用于转型并遍历
     1. k-v数据还是保存在HashMap$Node中，只是为了便于遍历，将一对k-v向上转型Entry类型。[HashMap$Node实现了Entry]
     再将Entry类型放入entrySet的集合中。便于遍历.entry.getClass() 输出就是 HashMap$Node (运行类型或者叫内存地址)
     2. 同理，Set keySet() 和 Collection values() 集合是为了将Map中所有的Key和Value分别存储而创建的

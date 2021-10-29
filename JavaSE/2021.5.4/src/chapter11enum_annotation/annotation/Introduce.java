@@ -1,5 +1,6 @@
 package chapter11enum_annotation.annotation;
 
+
 /*
     一：注解定义
     1. 注解也成为元数据，用于修饰解释 包、类、方法、属性、构造器、局部变量等数据信息
@@ -17,5 +18,4 @@ package chapter11enum_annotation.annotation;
         3）@SuppressWarning:一直编译器警告
  */
 public class Introduce {
-
 }
