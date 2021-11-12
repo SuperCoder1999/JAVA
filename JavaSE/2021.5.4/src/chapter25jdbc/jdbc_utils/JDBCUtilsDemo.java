@@ -3,9 +3,7 @@ package chapter25jdbc.jdbc_utils;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Properties;
 
 /**
@@ -53,7 +51,7 @@ public class JDBCUtilsDemo{
     }
 
     //关闭连接
-    public static void closeConnection(ResultSet set, Statement statement) {
+    public static void closeConnection(ResultSet set, Statement statement,) {
 
     }
 }
