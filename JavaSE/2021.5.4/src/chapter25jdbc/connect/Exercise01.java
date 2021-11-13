@@ -31,7 +31,7 @@ public class Exercise01 {
         String driver = properties.getProperty("driver");
 
         //反射加载类
-        Class aclass = Class.forName(driver);
+        Class<?> aclass = Class.forName(driver);
         //这里的两步 静态代码 完成的
         Driver driver1 = (Driver)aclass.newInstance();
         DriverManager.registerDriver(driver1);

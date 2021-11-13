@@ -13,6 +13,7 @@ package chapter15genetic;
 
     三：注意
     通过源码可以看到 @Test 只能用于注释 方法
+    另外，JUnit 的 @Test 函数不能有 返回值，有返回值，控制台就不会输出内容
  */
 
 import org.junit.jupiter.api.Test;
