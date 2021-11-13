@@ -75,20 +75,18 @@ public class DBUtilsUse {
     public void testScalar() throws SQLException {
         //1.获取连接
         Connection connection = JDBCUtilsByDruid.getConnection();
-        //2.编写sql
-        String sql = "select * from actor where id=?";
-        //3.创建QueryRunner类
+        //2.创建QueryRunner类
         QueryRunner queryRunner = new QueryRunner();
 
+        //3.编写sql
+        String sql = "select name from actor where id=?";
+
         //4.调用queryRunner.query()方法执行查询语句
-        //返回值 为 JavaBean实例
-        Object scalar = queryRunner.query(connection, sql, new ScalarHandler(), 1);
+        //返回值 为 Object - 也可以向下转型
+        Object scalar = queryRunner.query(connection, sql, new ScalarHandler(), 8);
 
         //5.处理结果
-        System.out.println(actor);
-        if (actor != null)
-            System.out.println(actor.getId() + "\t" + actor.getName() + "\t" +
-                    actor.getSex() + "\t" + actor.getBorndate() + "\t" + actor.getPhone());
+        System.out.println(scalar);
 
         //6.关闭 资源
         JDBCUtilsByDruid.closeConnection(null, null, connection);
