@@ -20,7 +20,7 @@ public class DBUtilsUse {
 
     //演示 dbutils 多行查询 获取 结果集的ArrayList数组  - 使用JDBCUtilsByDruid 工具类
     @Test
-    public void testQueryMany() throws SQLException {
+    public void testQueryMany() throws SQLException, ClassNotFoundException {
         //1.获取连接
         Connection connection = JDBCUtilsByDruid.getConnection();
 
@@ -34,7 +34,8 @@ public class DBUtilsUse {
         QueryRunner queryRunner = new QueryRunner();
 
         //4. 使用 QueryRunner类中的 query()方法 执行查询语句
-        List<Actor> list = queryRunner.query(connection, sql, new BeanListHandler<>(Actor.class), 1);
+        Class<Actor> clazz = Actor.class;
+        List<Actor> list = queryRunner.query(connection, sql, new BeanListHandler<>(clazz), 1);
 
         //5. 处理 得到的结果
         System.out.println(list);
@@ -58,7 +59,7 @@ public class DBUtilsUse {
 
         //4.调用queryRunner.query()方法执行查询语句
         //返回值 为 JavaBean实例
-        Actor actor = queryRunner.query(connection, sql, new BeanHandler<>(Actor.class), 11);
+        Actor actor = queryRunner.query(connection, sql, new BeanHandler<Actor>(Actor.class), 1);
 
         //5.处理结果
         System.out.println(actor);
@@ -83,12 +84,53 @@ public class DBUtilsUse {
 
         //4.调用queryRunner.query()方法执行查询语句
         //返回值 为 Object - 也可以向下转型
-        Object scalar = queryRunner.query(connection, sql, new ScalarHandler(), 8);
+        Object scalar = queryRunner.query(connection, sql, new ScalarHandler(), 9);
 
         //5.处理结果
         System.out.println(scalar);
 
         //6.关闭 资源
         JDBCUtilsByDruid.closeConnection(null, null, connection);
+    }
+
+    //演示 dbutils 实现 DML操作(增删改) - 使用JDBCUtilsByDruid 工具类
+    @Test
+    public void testDML() throws SQLException {
+        //1.获取连接
+        Connection connection = JDBCUtilsByDruid.getConnection();
+
+        //2. 编写 sql
+        String sqlInsert = "insert into actor values(null, ?, ?, ?, ?)";
+        String sqlUpdate = "update actor set name=? where id=?";
+        String sqlDelete = "delete from actor where id=?";
+
+        //3. 创建 QueryRunner 类
+        QueryRunner queryRunner = new QueryRunner();
+
+        // 测试各个方法
+        //testDMLInsert(connection,sqlInsert, queryRunner);
+        testDMLUpdate(connection, sqlUpdate, queryRunner);
+        testDMLDelete(connection, sqlDelete, queryRunner);
+
+        //5. 释放资源
+        JDBCUtilsByDruid.closeConnection(null, null, connection);
+    }
+    public void testDMLInsert(Connection connection, String sql, QueryRunner queryRunner) throws SQLException {
+        //4. 调用 QueryRunner.update() 方法 执行 DML
+        int rows = queryRunner.update(connection, sql, "林青霞", "女", "1999-10-10", "116");
+
+        System.out.println(rows == 1 ? "插入成功" : "插入失败");
+    }
+    public void testDMLUpdate(Connection connection, String sql, QueryRunner queryRunner) throws SQLException {
+        //4. 调用 QueryRunner.update()方法 执行DML
+        int rows = queryRunner.update(connection, sql, "华仔", 1);
+
+        System.out.println(rows == 1 ? "修改成功" : "修改没有影响到表");
+    }
+    public void testDMLDelete(Connection connection, String sql, QueryRunner queryRunner) throws SQLException {
+        //4. 调用 QueryRunner.update()方法 执行DML
+        int rows = queryRunner.update(connection, sql,  10);
+
+        System.out.println(rows == 1 ? "删除成功" : "删除没有影响到表");
     }
 }

@@ -45,7 +45,7 @@ interface IA extends IUsb<String, Double> {
 }
 
 //当我们去实现IA接口时，因为IA在继承IUsu 接口时并且指定了U 为String R为Double
-//，在实现IUsu接口的方法时，自动使用String替换U, 是Double替换R
+//，在实现IUsb接口的方法时，自动使用String替换U, 是Double替换R
 class AA implements IA {
 
     @Override

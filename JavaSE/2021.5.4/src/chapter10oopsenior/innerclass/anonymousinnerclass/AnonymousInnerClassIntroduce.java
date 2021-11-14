@@ -94,7 +94,7 @@ class Outer04 { //外部类
         /*
             class Outer04$2 extends Father{
                 @Override
-                public void test() {
+                public void TestDao() {
                     System_.out.println("匿名内部类重写了test方法");
                 }
             }

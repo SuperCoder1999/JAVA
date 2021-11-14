@@ -94,8 +94,8 @@ class Plane implements Vehicles {
 /*
 public class Homework06 {
     public static void main(String[] args) {
-        new Person("Tom", new Horse()).test();
-        new Person("Jack", new Boat()).test();
+        new Person("Tom", new Horse()).TestDao();
+        new Person("Jack", new Boat()).TestDao();
     }
 }
 
@@ -108,7 +108,7 @@ class Person {
         this.vehicles = vehicles;
     }
 
-    public void test() {
+    public void TestDao() {
         System_.out.println(name + vehicles.work());
     }
 }
