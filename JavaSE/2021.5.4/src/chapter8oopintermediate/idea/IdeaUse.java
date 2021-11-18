@@ -37,6 +37,8 @@ public class IdeaUse {
         19.setting - Build,Execution,Deployment -
         Debugger - Java - Enable alternative view for Collections classes在Debugger时可以显示全部集合元素
         20.查找文件 shift+shift
+        21.替换所有 文字 Ctrl+r
+        22.显示当前类/接口 被谁实现或继承 Ctrl+H 调取Hierarchy
 
         二：模板（File--Settings--Editor--Live templates,选择范围java）
         1.main回车
