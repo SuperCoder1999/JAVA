@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 创建 数据连接对象 类 的 父类。将各个Dao中共同的操作写在这里
  */
-public class BasicDao<T> {//泛型 继承这个方法的时候 可以指定 子类中 对象类型.用于校验 这个类中方法参数
+public abstract class BasicDao<T> {//泛型 继承这个方法的时候 可以指定 子类中 对象类型.用于校验 这个类中方法参数
     //需要用到 dbutils+JDBCUtilsByDruid
 
     //创建一个 QueryRunner对象 够用吗？

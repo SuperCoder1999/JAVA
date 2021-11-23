@@ -39,6 +39,8 @@ public class IdeaUse {
         20.查找文件 shift+shift
         21.替换所有 文字 Ctrl+r
         22.显示当前类/接口 被谁实现或继承 Ctrl+H 调取Hierarchy
+        23.快速测试:ctrl+shift+t
+        24.快速替换:ctrl+shift+r 可以替换多个文件或特定文件(看尚硅谷10.书城项目)
 
         二：模板（File--Settings--Editor--Live templates,选择范围java）
         1.main回车
