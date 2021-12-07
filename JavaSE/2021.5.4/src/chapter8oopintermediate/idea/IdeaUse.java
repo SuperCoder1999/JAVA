@@ -27,7 +27,7 @@ public class IdeaUse {
         9.光标放在一个方法上，Ctrl + b、Ctrl+左键 ，可以定位到该方法(类)的定义区域（继承中很好用）(也可以用来看JDK源码）
         10.自动分配变量名：new Scanner(System_.in).var回车
         11 alt + enter:自动添加类的包
-        12.10000.for 就会创建10000次循环的for循环
+        12.10000.for 就会创建10000次循环的for循环 同样的 items.for 也可以
         13.try-catch处理异常：将该代码块->选中->快捷键 ctrl + alt + t -> 选中 try-catch
         14.在接口处CTRL+alt+b   查看实现该接口的类 或者找子类
         15.显示所有的快捷模板的的快捷键 ctrl + j
