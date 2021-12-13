@@ -68,7 +68,7 @@ public class MapFor {
         Set<Map.Entry<Byte, Integer>> entrySet = map.entrySet();// 返回： Set<Map.Entry<K, V>>。// --- 集合那一节需要改进
         //(1) 增强for
         System.out.println("----使用EntrySet 的 for增强(第3种)----");
-        for (Map.Entry entry : entrySet) {
+        for (Map.Entry entry : entrySet) {//-- 因为 这里Map.Entry<>中的泛型确定,所以不用再转换了
             //将entry 转成 Map.Entry
             /*Map.Entry m = (Map.Entry) entry;
             System.out.println(m.getKey() + "-" + m.getValue());*/
