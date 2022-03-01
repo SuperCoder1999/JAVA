@@ -3,10 +3,9 @@ package chapter10oopsenior.interface_.exercise;
 public class Exercise02 {
     public static void main(String[] args) {
         new C().pX();
-        C c = new C();
-
-        // System_.out.println(c.x);
-            // 这样调用时也不行
+        
+        // C c = new C(); System_.out.println(c.x);
+        // 这样调用时也不行
     }
 }
 
