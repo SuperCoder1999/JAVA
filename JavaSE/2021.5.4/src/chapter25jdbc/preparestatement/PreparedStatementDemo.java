@@ -14,7 +14,7 @@ public class PreparedStatementDemo {
         Class.forName("com.mysql.jdbc.Driver");
         Connection connection = DriverManager.getConnection(
                 "jdbc:mysql://123.57.92.107:3306/hsp_db02?user=root&password=N331150871");
-        Statement statement = connection.createStatement();
+        //Statement statement = connection.createStatement();
 
         //获取 客户端输入信息：
         Scanner scanner = new Scanner(System.in);
