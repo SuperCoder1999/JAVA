@@ -19,7 +19,7 @@ class World implements Runnable {
     @Override
     public void run() {
         while (true) {
-            System.out.println("Hello World" + (++count));
+            System.out.println("Hello线程名称=" + Thread.currentThread().getName() + " Hello World" + (++count));
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -36,7 +36,7 @@ class Hi implements Runnable {
     @Override
     public void run() {
         while (true) {
-            System.out.println("Hi线程名称=" + Thread.currentThread().getName() + "hi" + ++count);
+            System.out.println("Hi线程名称=" + Thread.currentThread().getName() + " hi" + ++count);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

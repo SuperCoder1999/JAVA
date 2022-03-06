@@ -29,7 +29,7 @@ class Dog implements Runnable { //通过实现Runnable接口，开发线程
 
     @Override
     public void run() { //普通方法
-        System.out.println("Cat线程名称=" + Thread.currentThread().getName());
+        System.out.println("Dog线程名称=" + Thread.currentThread().getName());
         while (true) {
             System.out.println("小狗汪汪叫..hi" + (++count));
 
