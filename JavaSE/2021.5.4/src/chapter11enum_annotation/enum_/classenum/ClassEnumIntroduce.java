@@ -27,7 +27,7 @@ public class ClassEnumIntroduce {
     }
 }
 
-//演示字定义枚举实现
+//演示自定义枚举实现
 class Season {//类
     private String name;
     private String desc;//描述
