@@ -4,7 +4,7 @@ package chapter11enum_annotation.enum_.keywordenum;
     一：枚举类中的toString方法
     由于enum创建枚举常量的本质是继承Enum类，所以toString方法是Enum的同String方法
 
-    Enum中的toString方法代码：（事实上，从反编译中还看到了toString方法，所以这个还是不清楚）
+    Enum中的toString方法代码：（事实上，从enum反编译中还看到了enum自己的toString方法，所以这个还是不清楚）
         public String toString() {
         return name;
     }

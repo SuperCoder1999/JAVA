@@ -34,7 +34,8 @@ public class EnumMethod {
         // 5.valueOf：将字符串转换成枚举对象，要求字符串必须为已有的常量名，否则报异常
         //执行流程
         //1. 根据你输入的 "AUTUMN" 到 Season2的枚举对象去查找
-        //2. 如果找到了，就返回，如果没有找到，就报错
+        //2. 如果找到了，就返回，如果没有找到，就报错 (区别大小写)
+        // Season2 autumn1 = Season2.valueOf("autumn");
         Season2 autumn1 = Season2.valueOf("AUTUMN");
         System.out.println("autumn1=" + autumn1);
         System.out.println(autumn == autumn1);
