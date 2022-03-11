@@ -5,10 +5,9 @@ import java.io.*;
 public class BufferedCopy_ {
     public static void main(String[] args) {
         //老韩说明
-        //1. BufferedReader 和 BufferedWriter 是安装字符操作
+        //1. BufferedReader 和 BufferedWriter 是按照字符操作
         //2. 不要去操作 二进制文件[声音，视频，doc, pdf ], 可能造成文件损坏
-        //BufferedInputStream
-        //BufferedOutputStream
+        //而是用BufferedInputStream/BufferedOutputStream
         String srcFilePath = "e:\\a.java";
         String destFilePath = "e:\\a2.java";
 //        String srcFilePath = "e:\\0245_韩顺平零基础学Java_引出this.avi";

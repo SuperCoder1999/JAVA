@@ -43,6 +43,7 @@ public class IdeaUse {
         24.快速替换:ctrl+shift+r 可以替换多个文件或特定文件(看尚硅谷10.书城项目)
         25.查看一个方法的形参: ctrl+P
         26.打开Structure: alt+7
+        27.复制到下一行:ctrl+D
 
         二：模板（File--Settings--Editor--Live templates,选择范围java）
         1.main回车

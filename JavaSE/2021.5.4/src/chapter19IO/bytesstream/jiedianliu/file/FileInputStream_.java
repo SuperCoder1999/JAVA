@@ -24,11 +24,12 @@ public class FileInputStream_ {
     public void readFile01() {
         String filePath = "e:\\hello.txt";
         int readData = 0;
-        FileInputStream fileInputStream = null; //放在外部 允许关闭文件字节流
+        FileInputStream fileInputStream = null; //放在外部 用于关闭文件字节流
         try {
             //创建 FileInputStream 对象，用于读取 文件
             fileInputStream = new FileInputStream(filePath);// 这里有编译错误
-            //从该输入流读取一个字节的数据。 如果没有输入可用，此方法将阻止。
+            /*从该输入流读取一个字节的数据(从输入流中读取数据的下一个字节。)。 如果没有输入可用，此方法将阻止。
+            返回结果为 int (范围宽度即2^8)*/
             //如果返回-1 , 表示读取完毕
             while ((readData = fileInputStream.read()) != -1) {// .read()也会报编译错误
                 System.out.print((char)readData);//转成char显示

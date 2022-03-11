@@ -23,8 +23,8 @@ public class FileOutputStream_ {
         try {
             //得到 FileOutputStream对象 对象
             //老师说明
-            //1. new FileOutputStream(filePath) 创建方式，当写入内容是，会覆盖原来的内容
-            //2. new FileOutputStream(filePath, true) 创建方式，当写入内容是，是追加到文件后面
+            //1. new FileOutputStream(filePath) 创建方式，当写入内容时，会覆盖原来的内容
+            //2. new FileOutputStream(filePath, true) 创建方式，当写入内容时，是追加到文件后面
             fileOutputStream = new FileOutputStream(filePath, true);
             //写入一个字节
             //fileOutputStream.write('H');//
@@ -34,8 +34,9 @@ public class FileOutputStream_ {
             //fileOutputStream.write(str.getBytes());
             /*
             write(byte[] b, int off, int len) 将 len字节从位于偏移量 off的指定字节数组写入此文件输出流
+            即,从offset开始算起的len个字节
              */
-            fileOutputStream.write(str.getBytes(), 0, 3);
+            fileOutputStream.write(str.getBytes(), 2, 3);
 
         } catch (IOException e) {
             e.printStackTrace();
