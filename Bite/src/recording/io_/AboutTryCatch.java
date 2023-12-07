@@ -41,7 +41,7 @@ public class AboutTryCatch {
     }
 
     /**
-     * try() catch 新的操作
+     * try() catch 新的操作. try中自动释放资源(关闭流)
      */
     @Test
     public void newTryCatchTest() {
